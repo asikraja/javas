@@ -1,0 +1,15 @@
+ public static String initCap(String strinput){
+			
+			StringBuffer strresult = new StringBuffer();
+			
+				
+				strresult = new StringBuffer(strinput.substring(0,1));
+				String[] wordarr = strinput.substring(hypenindex).split("\\s");
+				
+				for(int ch=0;ch<wordarr.length;ch++){				
+					strresult.append(Character.toUpperCase(wordarr[ch].charAt(0)))
+					  .append(wordarr[ch].substring(1).toLowerCase()).append(" ");			
+				}			
+			
+			return strresult.toString();
+		}
